@@ -4,7 +4,7 @@
 		<b> any ubuntu based O.S. </b>
 	</p>
   <a href="https://ubuntu.com/download/flavours" target="_blank">
-		<img src="../media/logo-ubuntu-flavors.png" alt="Ubuntu Flavors">
+		<img src="../assets/logo-ubuntu-flavors.png" alt="Ubuntu Flavors">
 	</a>
 	<br>
 	<br>
