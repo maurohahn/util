@@ -82,7 +82,7 @@ sudo apt install android-studio
 > Info:
 - [Snap Applications Missing in Linux with ZSH](https://realjenius.com/2020/01/12/kde-neon-snap-apps-missing/)
 ---
-## NodeJS 14 LTS (+ npm )
+## NodeJS 14 LTS (+ npm)
 
 ```console
 sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
@@ -128,7 +128,7 @@ sudo apt install dbeaver-ce
 
 ```
 ---
-## RDM - GUI for Redis
+## RDM - Redis GUI
 
 ```console
 sudo snap install redis-desktop-manager
@@ -149,7 +149,7 @@ sudo snap install intellij-idea-community --classic
 
 ```
 ---
-## Robo3T (Gui to mongoDB)
+## Robo3T (MongoDB GUI)
 
 ```console
 sudo snap install robo3t-snap
@@ -220,7 +220,7 @@ sudo apt install filezilla
 sudo snap install remmina
 ```
 ---
-## Flameshot
+## Flameshot (print screen)
 
 ```console
 sudo snap install flameshot
