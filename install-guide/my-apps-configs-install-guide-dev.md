@@ -90,128 +90,151 @@ sudo apt update
 sudo apt install nodejs
 ```
 ---
+## Yarn (stable version)
 
-
-
-
-
-Terminal com Oh My Zsh, Spaceship, Dracula e mais – Rocketseat
-
-
-Snap Applications Missing in Linux with ZSH
-
-
-Set ZSH DEFAULT
-chsh -s $(which zsh)
-# logoff e login
-
-
-NodeJS 14 LTS (+ npm )
-sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
-sudo apt update
-sudo apt install nodejs
-
-Yarn
-
-May 26, 2020 How to Install Yarn on Ubuntu 20.04
-
+```console
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
 sudo apt update
-
-sudo apt install yarn
 
 # only yarn no node
 sudo apt install --no-install-recommends yarn
 
+# yarn install default
+sudo apt install yarn
+```
+---
+## VS Code
 
-
-
-VS Code
-
-Visual Studio Code no Ubuntu 20.04 LTS e derivados - Veja como instalar
-
+```console
 sudo snap install code --classic
+```
+> Info:
+- [Case error ENOSPC](
+https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
+---
+## Java (openjdk last LTS)
 
-https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
-
-
-Java (openjdk last LTS)
+```console
 sudo apt install default-jdk
+```
+---
+## Dbeaver (Community Edition)
 
-Dbeaver (Community Edition)
-
+```console
 sudo add-apt-repository ppa:serge-rider/dbeaver-ce
 sudo apt update
 sudo apt install dbeaver-ce
 
-install native drive for dump
+```
+---
+## RDM - GUI for Redis
 
-path ->		$ which pg_dump
-
-
-RDM - GUI for Redis
-
+```console
 sudo snap install redis-desktop-manager
 
+```
+---
+## Virtualbox
 
-Virtualbox
-
+```console
 sudo apt install virtualbox
 
-Intellij
+```
+---
+## Intellij (stable version)
 
+```console
 sudo snap install intellij-idea-community --classic
 
-Robo3T (mongoDB)
+```
+---
+## Robo3T (Gui to mongoDB)
 
+```console
 sudo snap install robo3t-snap
 
+```
+---
+## Postman
 
-Postman
-
+```console
 sudo snap install postman
 
+```
+---
+## Insomnia Core
 
-Insomnia Core (Better Postman)
-
+```console
 sudo snap install insomnia
 
-Docker
-Install Docker Engine on Ubuntu
-Como Instalar e Utilizar o Docker no Ubuntu 20.04
+```
+---
+## Docker
+[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
+```console
 sudo apt update
-
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 sudo apt update
 
-# check repo from docker (https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
-)
+# check repo from docker return -> (https://download.docker.com/linux/ubuntu focal/stable amd64 Packages)
 apt-cache policy docker-ce
+
 sudo apt install docker-ce
+
 # check service docker (Active: active - running )
 sudo systemctl status docker
+```
+---
+## Docker Compose
+[Install Docker Compose](https://docs.docker.com/compose/install/)
 
-Docker Compose
-Install Docker Compose
-
+```console
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+
 # check installed
 docker-compose --version
+```
+---
+## TeamViewer
 
-TeamViewer
+```console
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install ./teamviewer_amd64.deb
+```
+---
+## Filezilla
 
-Filezilla
-
+```console
 sudo apt install filezilla
+```
+---
+## Remmina
+
+```console
+sudo snap install remmina
+```
+---
+## Flameshot
+
+```console
+sudo snap install flameshot
+```
+---
+## Obs-studio (record screen)
+
+```console
+sudo snap install obs-studio
+```
+---
+
+
+
+
 
 
