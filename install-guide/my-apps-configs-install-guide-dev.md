@@ -58,4 +58,160 @@ sudo apt update
 sudo apt install git
 ```
 ---
+## Pgadmin4 Desktop
+```console
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+sudo apt install pgadmin4-desktop
+```
+---
+## Android Studio
+
+```console
+sudo add-apt-repository ppa:maarten-fonville/android-studio
+sudo apt update
+sudo apt install android-studio
+```
+> Info:
+- [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
+- [Problem Invalid Gradle JDK configuration found. Open Gradle Settings Use JDK from project structure](https://www.programmersought.com/article/38766432251/)
+---
+## ZSH Terminal
+
+[ZSH + On My  Zsh [pt-br]](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
+> Info:
+- [Snap Applications Missing in Linux with ZSH](https://realjenius.com/2020/01/12/kde-neon-snap-apps-missing/)
+---
+## NodeJS 14 LTS (+ npm )
+
+```console
+sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+sudo apt update
+sudo apt install nodejs
+```
+---
+
+
+
+
+
+Terminal com Oh My Zsh, Spaceship, Dracula e mais – Rocketseat
+
+
+Snap Applications Missing in Linux with ZSH
+
+
+Set ZSH DEFAULT
+chsh -s $(which zsh)
+# logoff e login
+
+
+NodeJS 14 LTS (+ npm )
+sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+sudo apt update
+sudo apt install nodejs
+
+Yarn
+
+May 26, 2020 How to Install Yarn on Ubuntu 20.04
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt update
+
+sudo apt install yarn
+
+# only yarn no node
+sudo apt install --no-install-recommends yarn
+
+
+
+
+VS Code
+
+Visual Studio Code no Ubuntu 20.04 LTS e derivados - Veja como instalar
+
+sudo snap install code --classic
+
+https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+
+
+Java (openjdk last LTS)
+sudo apt install default-jdk
+
+Dbeaver (Community Edition)
+
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+sudo apt update
+sudo apt install dbeaver-ce
+
+install native drive for dump
+
+path ->		$ which pg_dump
+
+
+RDM - GUI for Redis
+
+sudo snap install redis-desktop-manager
+
+
+Virtualbox
+
+sudo apt install virtualbox
+
+Intellij
+
+sudo snap install intellij-idea-community --classic
+
+Robo3T (mongoDB)
+
+sudo snap install robo3t-snap
+
+
+Postman
+
+sudo snap install postman
+
+
+Insomnia Core (Better Postman)
+
+sudo snap install insomnia
+
+Docker
+Install Docker Engine on Ubuntu
+Como Instalar e Utilizar o Docker no Ubuntu 20.04
+
+sudo apt update
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt update
+
+# check repo from docker (https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+)
+apt-cache policy docker-ce
+sudo apt install docker-ce
+# check service docker (Active: active - running )
+sudo systemctl status docker
+
+Docker Compose
+Install Docker Compose
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+# check installed
+docker-compose --version
+
+TeamViewer
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo apt install ./teamviewer_amd64.deb
+
+Filezilla
+
+sudo apt install filezilla
+
 
