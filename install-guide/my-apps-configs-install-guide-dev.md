@@ -71,6 +71,7 @@ sudo apt install pgadmin4-desktop
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt update
 sudo apt install android-studio
+sudo chown -R $USER:$USER /opt/android-studio
 ```
 > Info:
 - [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
