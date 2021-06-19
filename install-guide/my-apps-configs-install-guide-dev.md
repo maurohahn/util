@@ -38,6 +38,14 @@ sudo apt install plasma-discover-backend-snap
 ```console
 sudo apt install snapd
 ```
+
+> AppImageLaucher
+```console
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt update
+sudo apt install appimagelauncher
+```
+
 ---
 ## Chrome
 ```console
