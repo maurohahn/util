@@ -58,8 +58,7 @@ sudo apt install google-chrome-stable
 ```
 ---
 ## Git (add latest version)
-<a href="https://git-scm.com/download/linux" target="_blank">Download Git for Linux</a>
-<!-- [Download Git for Linux](https://git-scm.com/download/linux) -->
+[Download Git for Linux](https://git-scm.com/download/linux)
 
 ```console
 sudo add-apt-repository ppa:git-core/ppa 
@@ -83,14 +82,14 @@ sudo apt install android-studio
 sudo chown -R $USER:$USER /opt/android-studio
 ```
 > Info:
-- [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux){:target="_blank"}
-- [Problem Invalid Gradle JDK configuration found. Open Gradle Settings Use JDK from project structure](https://www.programmersought.com/article/38766432251/){:target="_blank"}
+- [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
+- [Problem Invalid Gradle JDK configuration found. Open Gradle Settings Use JDK from project structure](https://www.programmersought.com/article/38766432251/)
 ---
 ## ZSH Terminal
 
-[ZSH + On My  Zsh [pt-br]](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/){:target="_blank"}
+[ZSH + On My  Zsh [pt-br]](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
 > Info:
-- [Snap Applications Missing in Linux with ZSH](https://realjenius.com/2020/01/12/kde-neon-snap-apps-missing/){:target="_blank"}
+- [Snap Applications Missing in Linux with ZSH](https://realjenius.com/2020/01/12/kde-neon-snap-apps-missing/)
 ---
 ## NodeJS 14 LTS (+ npm)
 
@@ -121,7 +120,7 @@ sudo snap install code --classic
 ```
 > Info:
 - [Case error ENOSPC](
-https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc){:target="_blank"}
+https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
 ---
 ## Java (openjdk last LTS)
 
@@ -161,7 +160,7 @@ sudo snap install intellij-idea-community --classic
 ---
 ## NoSQLBooster (MongoDB GUI)
 > Info:
-- [Official download page](https://nosqlbooster.com/downloads){:target="_blank"}
+- [Official download page](https://nosqlbooster.com/downloads)
 
 ```console
 wget https://s3.mongobooster.com/download/releasesv6/nosqlbooster4mongo-6.2.15.AppImage
@@ -171,7 +170,7 @@ chmod a+x nosqlbooster4mongo*.AppImage
 ---
 ## AWS - NoSQL Workbench (Dynamo GUI)
 > Info:
-- [Official download page](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html){:target="_blank"}
+- [Official download page](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html)
 
 ```console
 wget -c https://s3.amazonaws.com/nosql-workbench/NoSQL%20Workbench-linux-x86_64-3.0.0.AppImage -O aws-nosql-workbench-3.AppImage
@@ -194,7 +193,7 @@ sudo snap install insomnia
 ```
 ---
 ## Docker
-[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/){:target="_blank"}
+[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 ```console
 sudo apt update
@@ -214,7 +213,7 @@ sudo systemctl status docker
 ```
 ---
 ## Docker Compose
-[Install Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}
+[Install Docker Compose](https://docs.docker.com/compose/install/)
 
 ```console
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
