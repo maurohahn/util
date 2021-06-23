@@ -158,11 +158,24 @@ sudo snap install intellij-idea-community --classic
 
 ```
 ---
-## Robo3T (MongoDB GUI)
+## NoSQLBooster (MongoDB GUI)
+> Info:
+- [Official download page](https://nosqlbooster.com/downloads)
 
 ```console
-sudo snap install robo3t-snap
+wget https://s3.mongobooster.com/download/releasesv6/nosqlbooster4mongo-6.2.15.AppImage
+chmod a+x nosqlbooster4mongo*.AppImage
+./nosqlbooster4mongo*.AppImage
+```
+---
+## AWS - NoSQL Workbench (Dynamo GUI)
+> Info:
+- [Official download page](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html)
 
+```console
+wget -c https://s3.amazonaws.com/nosql-workbench/NoSQL%20Workbench-linux-x86_64-3.0.0.AppImage -O aws-nosql-workbench-3.AppImage
+chmod a+x aws-nosql-workbench*.AppImage
+./aws-nosql-workbench*.AppImage
 ```
 ---
 ## Postman
