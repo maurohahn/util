@@ -58,7 +58,8 @@ sudo apt install google-chrome-stable
 ```
 ---
 ## Git (add latest version)
-[Download Git for Linux](https://git-scm.com/download/linux){:target="_blank"}
+<a href="https://git-scm.com/download/linux" target="_blank">Download Git for Linux</a>
+<!-- [Download Git for Linux](https://git-scm.com/download/linux) -->
 
 ```console
 sudo add-apt-repository ppa:git-core/ppa 
