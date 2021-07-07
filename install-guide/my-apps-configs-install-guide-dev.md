@@ -144,7 +144,18 @@ sudo apt install python3.7
 ```console
 pip install virtualenv
 virtualenv --python python3.7 .venv
-
+```
+- check path virtualEnv
+```console
+pip --version
+```
+- active virtualEnv
+```console
+source .venv/bin/activate
+```
+- deactivate virtualEnv
+```console
+deactivate
 ```
 
 ---
