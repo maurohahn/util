@@ -38,6 +38,14 @@ sudo apt install plasma-discover-backend-snap
 ```console
 sudo apt install snapd
 ```
+
+> AppImageLaucher
+```console
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt update
+sudo apt install appimagelauncher
+```
+
 ---
 ## Chrome
 ```console
@@ -71,6 +79,7 @@ sudo apt install pgadmin4-desktop
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt update
 sudo apt install android-studio
+sudo chown -R $USER:$USER /opt/android-studio
 ```
 > Info:
 - [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
@@ -82,7 +91,7 @@ sudo apt install android-studio
 > Info:
 - [Snap Applications Missing in Linux with ZSH](https://realjenius.com/2020/01/12/kde-neon-snap-apps-missing/)
 ---
-## NodeJS 14 LTS (+ npm )
+## NodeJS 14 LTS (+ npm)
 
 ```console
 sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
@@ -128,7 +137,7 @@ sudo apt install dbeaver-ce
 
 ```
 ---
-## RDM - GUI for Redis
+## RDM - Redis GUI
 
 ```console
 sudo snap install redis-desktop-manager
@@ -149,11 +158,24 @@ sudo snap install intellij-idea-community --classic
 
 ```
 ---
-## Robo3T (Gui to mongoDB)
+## NoSQLBooster (MongoDB GUI)
+> Info:
+- [Official download page](https://nosqlbooster.com/downloads)
 
 ```console
-sudo snap install robo3t-snap
+wget https://s3.mongobooster.com/download/releasesv6/nosqlbooster4mongo-6.2.15.AppImage
+chmod a+x nosqlbooster4mongo*.AppImage
+./nosqlbooster4mongo*.AppImage
+```
+---
+## AWS - NoSQL Workbench (Dynamo GUI)
+> Info:
+- [Official download page](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html)
 
+```console
+wget -c https://s3.amazonaws.com/nosql-workbench/NoSQL%20Workbench-linux-x86_64-3.0.0.AppImage -O aws-nosql-workbench-3.AppImage
+chmod a+x aws-nosql-workbench*.AppImage
+./aws-nosql-workbench*.AppImage
 ```
 ---
 ## Postman
@@ -220,7 +242,7 @@ sudo apt install filezilla
 sudo snap install remmina
 ```
 ---
-## Flameshot
+## Flameshot (print screen)
 
 ```console
 sudo snap install flameshot
