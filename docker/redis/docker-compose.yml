@@ -1,0 +1,9 @@
+version: '3'
+services:
+    redis-db:
+        image: redis:6.2.4
+        container_name: local_redis
+        restart: unless-stopped
+        # network_mode: host        
+        ports:
+            - '6379:6379'

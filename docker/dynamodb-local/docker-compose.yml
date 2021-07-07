@@ -1,0 +1,11 @@
+# console admin
+# http://localhost:8000/shell/
+
+version: '3'
+services:
+    dynamo-db:
+        image: amazon/dynamodb-local:latest
+        container_name: local_dynamo
+        restart: unless-stopped
+        ports:
+            - '8000:8000'
