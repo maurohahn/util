@@ -128,7 +128,7 @@ https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-
 sudo apt install default-jdk
 ```
 ---
-## Python (3.8)
+## Python
 
 ```console
 sudo apt update
@@ -136,7 +136,17 @@ sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.8
+sudo apt install python3.7
 ```
+
+> Info:
+- virtualEnv in my project with specific version of python
+```console
+pip install virtualenv
+virtualenv --python python3.7 .venv
+
+```
+
 ---
 ## Dbeaver (Community Edition)
 
