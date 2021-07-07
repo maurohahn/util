@@ -90,6 +90,7 @@ sudo chown -R $USER:$USER /opt/android-studio
 [ZSH + On My  Zsh [pt-br]](https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/)
 > Info:
 - [Snap Applications Missing in Linux with ZSH](https://realjenius.com/2020/01/12/kde-neon-snap-apps-missing/)
+- add in $HOME/.zshrc -> export PATH=$HOME/.local/bin:$PATH
 ---
 ## NodeJS 14 LTS (+ npm)
 
