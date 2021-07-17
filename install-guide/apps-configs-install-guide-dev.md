@@ -1,5 +1,5 @@
 <div align="center">
-	<h1> My Apps and Configs Install Guide for Dev </h1>
+	<h1> Apps and Configs Install Guide for Dev </h1>
 	<p>
 		<b> any ubuntu based O.S. </b>
 	</p>
