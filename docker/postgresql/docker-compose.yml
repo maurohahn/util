@@ -1,22 +1,22 @@
 version: '3'
 services:
     pg-db:
-        image: postgres:9.6
+        image: postgres:${DV_VERSION:-9.6}
         container_name: local_pg
         restart: unless-stopped
         network_mode: host
-        env_file:
-            - database.env
-        # environment:
-        #     - POSTGRES_USER=postgres
-        #     - POSTGRES_PASSWORD=postgres
-        # logging:
-        #     options:
-        #     max-size: 10m
-        #     max-file: "3"
+        logging:
+            options:
+            max-size: 10m
+            max-file: "3"
+        environment:
+            POSTGRES_DB: ${DB_NAME:-my_database}
+            POSTGRES_USER: ${DB_USER:-my_database}
+            POSTGRES_PASSWORD: ${DB_PASSWORD:-my_database}
+            # PGDATA: /var/lib/postgresql/data
         # ports:
-        #     - '5432:5432'
+            # - "${DB_PORT:-5432}:5432"
         volumes:             
-            - ./data:/var/lib/postgresql/data
+            - ${DB_DATA_PATH:-./data}:/var/lib/postgresql/data
             # copy the sql script to create tables
             # - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql    
