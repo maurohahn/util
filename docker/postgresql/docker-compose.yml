@@ -7,13 +7,19 @@ services:
         network_mode: host
         logging:
             options:
-            max-size: 10m
-            max-file: "3"
+                max-size: 10m
+                max-file: "3"
+        # env_file:
+        #     - .env
         environment:
             POSTGRES_DB: ${DB_NAME:-my_database}
-            POSTGRES_USER: ${DB_USER:-my_database}
-            POSTGRES_PASSWORD: ${DB_PASSWORD:-my_database}
-            # PGDATA: /var/lib/postgresql/data
+            POSTGRES_USER: ${DB_USER:-postgres}
+            POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+            PGDATA: /var/lib/postgresql/data
+        # environment:
+        #     POSTGRES_DB: wswork
+        #     POSTGRES_USER: postgres
+        #     POSTGRES_PASSWORD: postgres
         # ports:
             # - "${DB_PORT:-5432}:5432"
         volumes:             

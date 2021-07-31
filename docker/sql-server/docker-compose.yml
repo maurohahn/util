@@ -1,14 +1,16 @@
 version: '3'
 services:
     sql-server-db:
-        image: mcr.microsoft.com/mssql/server:${DV_VERSION:-2017-CU8-ubuntu}
+        image: mcr.microsoft.com/mssql/server:${DV_VERSION:-2017-latest}
         container_name: local_sql_server
         restart: unless-stopped
         network_mode: host
         logging:
             options:
-            max-size: 10m
-            max-file: "3"
+                max-size: 10m
+                max-file: "3"
+        # env_file:
+            # - .env
         environment:
             SA_PASSWORD: ${DB_PASSWORD:-my_database}
             ACCEPT_EULA: "Y"
