@@ -127,6 +127,7 @@ https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-
 
 ```console
 sudo apt install default-jdk
+sudo apt install openjdk-8-jdk
 ```
 ---
 ## Python
