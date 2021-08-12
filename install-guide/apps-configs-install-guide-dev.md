@@ -288,9 +288,30 @@ sudo snap install flameshot
 sudo snap install obs-studio
 ```
 ---
+## Jenkins
+[Install Jenkins](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu)
 
+```console
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+```
 
+[Start Jenkins](https://www.jenkins.io/doc/book/installing/linux/#start-jenkins)
 
+```console
+sudo systemctl daemon-reload
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+```
 
+> Info:
+- [Case script with sudo](
+https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
 
+- [Change port](
+https://stackoverflow.com/questions/23769478/how-to-change-port-for-jenkins-window-service-when-8080-is-being-used/44020922)
 
+---
