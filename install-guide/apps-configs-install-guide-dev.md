@@ -308,7 +308,7 @@ sudo systemctl status jenkins
 ```
 
 > Info:
-- [Case script with sudo](
+- [Case script with sudo (Sudo: no tty present)](
 https://www.ti-enxame.com/pt/jenkins/jenkins-sudo-nenhum-presente-tty-e-nenhum-programa-askpass-especificado-com-nopasswd/826374473/)
 
 - [Change port](
