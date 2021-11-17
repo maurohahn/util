@@ -309,7 +309,7 @@ sudo systemctl status jenkins
 
 > Info:
 - [Case script with sudo](
-https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
+https://www.ti-enxame.com/pt/jenkins/jenkins-sudo-nenhum-presente-tty-e-nenhum-programa-askpass-especificado-com-nopasswd/826374473/)
 
 - [Change port](
 https://stackoverflow.com/questions/23769478/how-to-change-port-for-jenkins-window-service-when-8080-is-being-used/44020922)
