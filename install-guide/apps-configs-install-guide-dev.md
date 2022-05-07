@@ -310,3 +310,28 @@ https://www.ti-enxame.com/pt/jenkins/jenkins-sudo-nenhum-presente-tty-e-nenhum-p
 https://stackoverflow.com/questions/23769478/how-to-change-port-for-jenkins-window-service-when-8080-is-being-used/44020922)
 
 ---
+## OpenVPN3
+> Info:
+- [Official page](https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux)
+
+```console
+sudo su
+apt install apt-transport-https
+curl -fsSL https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub | gpg --dearmor > /etc/apt/trusted.gpg.d/openvpn-repo-pkg-keyring.gpg
+curl -fsSL https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-$(lsb_release -cs).list >/etc/apt/sources.list.d/openvpn3.list
+exit
+```
+> Info:
+- [Case error “doesn’t support architecture i386”](
+https://openvpn.net/vpn-server-resources/resolving-the-error-doesnt-support-architecture-i386-when-updating-or-installing-access-server/)
+
+```console
+sudo su
+# Add [arch=amd64] in between deb and before http:// to force 64-bit architecture.
+# For example, on an Ubuntu server, it would read:
+# deb [arch=amd64] http://as-repository.openvpn.net/debian bionic focal main
+nano /etc/apt/sources.list.d/openvpn3.list
+apt update
+apt install openvpn3
+exit
+```
