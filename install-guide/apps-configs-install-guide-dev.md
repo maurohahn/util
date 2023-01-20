@@ -16,7 +16,7 @@
 > curl
 ```console
 sudo apt install curl
-```
+```.
 
 > to work -> add-apt-repository
 ```console
@@ -78,12 +78,21 @@ sudo apt install pgadmin4-desktop
 ```console
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt update
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 sudo apt install android-studio
 sudo chown -R $USER:$USER /opt/android-studio
 ```
 > Info:
 - [Configure hardware acceleration for the Android Emulator](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux)
 - [Problem Invalid Gradle JDK configuration found. Open Gradle Settings Use JDK from project structure](https://www.programmersought.com/article/38766432251/)
+---
+## Scrcpy (share smartphone screen on pc)
+
+```console
+sudo apt install scrcpy
+```
+> Info:
+- [Repo](https://github.com/Genymobile/scrcpy)
 ---
 ## ZSH Terminal
 
