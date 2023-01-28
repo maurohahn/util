@@ -130,8 +130,15 @@ https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-
 ## Java (openjdk last LTS)
 
 ```console
-sudo apt install default-jdk
 sudo apt install openjdk-8-jdk
+sudo apt install openjdk-11-jdk 
+sudo apt install openjdk-17-jdk 
+```
+
+> Info:
+- switch between installed versions
+```console
+sudo update-alternatives --config java
 ```
 ---
 ## Python
