@@ -290,6 +290,10 @@ sudo snap install remmina
 sudo snap install flameshot
 ```
 ---
+## NVM (Node Version Manager)
+```console
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
 ## Obs-studio (record screen)
 
 ```console
