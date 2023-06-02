@@ -108,12 +108,8 @@ sudo apt install nodejs
 ---
 ## Yarn (stable version)
 
-```console
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-sudo apt update && sudo apt install yarn
-```
+> Info:
+- [install guide](https://yarnpkg.com/getting-started/install)
 ---
 ## VS Code
 
@@ -291,6 +287,9 @@ sudo snap install flameshot
 ```
 ---
 ## NVM (Node Version Manager)
+> Info:
+- [install guide](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 ```console
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
