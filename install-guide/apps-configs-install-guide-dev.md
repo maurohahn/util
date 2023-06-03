@@ -18,6 +18,12 @@
 sudo apt install curl
 ```
 
+> Guake Terminal
+```console
+sudo apt update
+sudo apt install guake
+```
+
 > to work -> add-apt-repository
 ```console
 sudo apt install software-properties-common
